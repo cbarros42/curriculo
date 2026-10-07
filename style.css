@@ -15,6 +15,14 @@
 .exchange-facts div{border-top:1px solid #436286;padding-top:14px}
 .exchange-facts dt{font:11px var(--mono);color:#9dcaff;margin-bottom:7px}
 .exchange-facts dd{margin:0;font-size:15px;line-height:1.5}
+/* Text and dot use the same structured employment state. */
+.portrait-note{max-width:calc(100% + 20px);line-height:1.6}
+.portrait-note[data-status="employed"],body.dark .portrait-note[data-status="employed"]{background:#e6f0ff;color:#10366b}
+.portrait-note[data-status="available"],body.dark .portrait-note[data-status="available"]{background:#e2f5e9;color:#14532d}
+.portrait-note[data-status="neutral"],body.dark .portrait-note[data-status="neutral"]{background:#edf0f5;color:#334155}
+.portrait-note[data-status="employed"] span:first-child{background:#1559ac}
+.portrait-note[data-status="available"] span:first-child{background:#176438}
+.portrait-note[data-status="neutral"] span:first-child{background:#475569}
 .badge-section-title{font-size:21px;letter-spacing:-.03em;margin:26px 0 12px}
 .badge-note{font:11px var(--mono);color:var(--muted);line-height:1.6}
 .badge-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
